@@ -20,7 +20,7 @@ var shadow = async (m, {
     }
     }
     }
-   const db = "./galeria/menudorrat3.jpg"
+   const db = "./Menu2.jpg"
   
 if (command == "menu" || command == "menú") {
 let uwu = `╦══════════════════ ⪨
