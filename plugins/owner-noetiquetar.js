@@ -3,7 +3,7 @@ let handler = async (m, {conn, text}) => {
 
  m.reply(`*[ ⚠ ️] No etiquetes a mi creador, si es algo urgente contacta con el a su chat privado*`)
 }
-handler.customPrefix = /@584125778026/i;
+handler.customPrefix = /@51907183648/@51967647592/i;
 handler.command = new RegExp();
 
 export default handler;
