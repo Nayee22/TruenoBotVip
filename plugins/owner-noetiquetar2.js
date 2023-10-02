@@ -3,14 +3,14 @@ let handler = async (m, {conn, text}) => {
 
   conn.sendButton(
     m.chat,
-    "*[ ⚠ ️] No etiquetes a VIRUZZ-OFC, si es algo urgente contacta con el a su chat privado*",
+    "*[ ⚠ ️] No etiquetes a Ezequiel creador del bot, si es algo urgente contacta con el a su chat privado*",
     wm3,
     [["📋 TERMINOS Y CONDICIONES", `#terminos`]],
     m
   );
   let mentionedJid = [m.sender];
 };
-handler.customPrefix = /@595986674310/i;
+handler.customPrefix = /@51907183648/i;
 handler.command = new RegExp();
 
 export default handler;
