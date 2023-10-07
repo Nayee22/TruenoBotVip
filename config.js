@@ -43,12 +43,12 @@ global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 
-global.gp1 = 'https://chat.whatsapp.com/BMGMxj6cU9o4S3huVByLFc'
-global.gp2 = 'https://chat.whatsapp.com/BcCSqRpWctb0J4cNZb02Te'
+global.gp1 = 'https://chat.whatsapp.com/GBtCQCqJtjb4ARqVfyThsS'
+global.gp2 = 'https://chat.whatsapp.com/GBtCQCqJtjb4ARqVfyThsS'
 global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝙷𝚊𝚌𝚑𝚒𝚔𝚘-𝙱𝚘𝚝`;
 global.gt = '★𝙷𝚊𝚌𝚑𝚒𝚔𝚘-𝙱𝚘𝚝★';
 global.mysticbot = '★𝙷𝙰𝙲𝙷𝙸𝙺𝙾 - 𝙱𝙾𝚃★';
-global.md = 'https://instagram.com/nnyyxx.cc';
+global.md = 'https://es.pornhub.com';
 global.mysticbot = 'https://github.com/HACHEJOTA/Hachiko-bot-MD';
 global.waitt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
 global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
