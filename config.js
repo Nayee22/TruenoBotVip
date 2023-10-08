@@ -8,13 +8,13 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['528341161685', '👑 CREADOR 👑', true],
-  ['528341161685', '🖥️ COLABORADOR 1 🖥️', true],
-  ['528341161685'],['528341161685'],['528341161685'],['528341161685']
+  ['51907183648', '👑 CREADOR 👑', true],
+  ['51967647592', '🖥️ COLABORADOR 1 🖥️', true],
+  ['51907183648'],['51907183648'],['51907183648'],['51907183648']
 ];
 
-global.suittag = ['528341161685'];
-global.prems = ['528341161685'];
+global.suittag = ['51907183648'];
+global.prems = ['51907183648'];
 
 global.packname = '☯︎ 𝙱𝙾𝚃\n☯︎ 𝙾𝚆𝙽𝙴𝚁';
 global.author = 'ʜᴀᴄʜɪᴋᴏ-ʙᴏᴛ-ᴍᴅ\nʜᴀᴄʜᴇᴊᴏᴛᴀ';
@@ -53,7 +53,7 @@ global.mysticbot = 'https://github.com/HACHEJOTA/Hachiko-bot-MD';
 global.waitt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
 global.waittt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
 global.waitttt = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*';
-global.nomorown = '528341161685';
+global.nomorown = '51907183648';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
