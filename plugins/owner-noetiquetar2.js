@@ -10,7 +10,7 @@ let handler = async (m, {conn, text}) => {
   );
   let mentionedJid = [m.sender];
 };
-handler.customPrefix = /@51907183648/i;
+handler.customPrefix =/i;
 handler.command = new RegExp();
 
 export default handler;
