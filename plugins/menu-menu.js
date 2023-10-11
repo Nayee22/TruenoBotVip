@@ -82,8 +82,8 @@ let menu = `╔═══[ ＵＳＵＡＲＩＯＳ ]═══╗
 
 ╔═══[ ＩＮＦＯＢＯＴ ]═══╗
 ║╭──────────────
-║├⫹⫺ *Creador :* Azami 
-║├⫹⫺ *Numero:* wa.me/59894808483
+║├⫹⫺ *Creador : EyN
+║├⫹⫺ *Numero:* wa.me/
 ║├⫹⫺ *Tiempo Activo:* ${uptime}
 ║├⫹⫺ *Registrado :* ${rtotalreg} de ${totalreg} usuarios
 ║╰────────────── 
