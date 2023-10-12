@@ -1,30 +1,57 @@
-const handler = async (m, {conn, text, participants}) => {
-  const member = participants.map((u) => u.id);
-  if (!text) {
-    var sum = member.length;
-  } else {
-    var sum = text;
-  }
-  let total = 0;
-  const sider = [];
-  for (let i = 0; i < sum; i++) {
-    const users = m.isGroup ? participants.find((u) => u.id == member[i]) : {};
-    if ((typeof global.db.data.users[member[i]] == 'undefined' || global.db.data.users[member[i]].chat == 0) && !users.isAdmin && !users.isSuperAdmin) {
-      if (typeof global.db.data.users[member[i]] !== 'undefined') {
-        if (global.db.data.users[member[i]].whitelist == false) {
-          total++;
-          sider.push(member[i]);
-        }
-      } else {
-        total++;
-        sider.push(member[i]);
-      }
-    }
-  }
-  if (total == 0) return conn.reply(m.chat, `*[❗] 𝙴𝚂𝚃𝙴 𝙶𝚁𝚄𝙿𝙾 𝙴𝚂 𝙰𝙲𝚃𝙸𝚅𝙾, 𝙽𝙾 𝚃𝙸𝙴𝙽𝙴 𝙵𝙰𝙽𝚃𝙰𝚂𝙼𝙰𝚂 :D*`, m);
-  m.reply(`*[ ⚠ 𝚁𝙴𝚅𝙸𝚂𝙸𝙾𝙽 𝙳𝙴 𝙸𝙽𝙰𝙲𝚃𝙸𝚅𝙾𝚂 ⚠ ]*\n\n*𝙶𝚁𝚄𝙿𝙾:* ${await conn.getName(m.chat)}\n*𝙼𝙸𝙴𝙼𝙱𝚁𝙾𝚂 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾:* ${sum}\n\n*[ 👻 𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙵𝙰𝙽𝚃𝙰𝚂𝙼𝙰𝚂 👻 ]*\n${sider.map((v) => '  ⚡ @' + v.replace(/@.+/, '')).join('\n')}\n\n*𝙽𝙾𝚃𝙰: 𝙴𝚂𝚃𝙾 𝙿𝚄𝙴𝙳𝙴 𝙽𝙾 𝚂𝙴𝚁 𝟷𝟶𝟶% 𝙰𝙲𝙴𝚁𝚃𝙰𝙳𝙾, 𝙴𝙻 𝙱𝙾𝚃 𝙸𝙽𝙸𝙲𝙸𝙰 𝙴𝙻 𝙲𝙾𝙽𝚃𝙴𝙾 𝙳𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴𝚂 𝙰𝙿𝙰𝚁𝚃𝙸𝚁 𝙳𝙴 𝚀𝚄𝙴 𝚂𝙴 𝙰𝙲𝚃𝙸𝚅𝙾 𝙴𝙽 𝙴𝚂𝚃𝙴 𝙽𝚄𝙼𝙴𝚁𝙾*`, null, {mentions: sider});
-};
-handler.command = /^(verfantasmas|fantasmas|sider)$/i;
-handler.admin = true;
-handler.botAdmin = true;
-export default handler;
+//import { areJidsSameUser } from '@adiwajshing/baileys'
+let areJidsSameUser =  (await import(global.baileys)).default
+let handler = async (m, { conn, text, participants, args, command }) => {
+let member = participants.map(u => u.id)
+if(!text) {
+var sum = member.length
+} else {
+var sum = text} 
+var total = 0
+var sider = []
+for(let i = 0; i < sum; i++) {
+let users = m.isGroup ? participants.find(u => u.id == member[i]) : {}
+if((typeof global.db.data.users[member[i]] == 'undefined' || global.db.data.users[member[i]].chat == 0) && !users.isAdmin && !users.isSuperAdmin) { 
+if (typeof global.db.data.users[member[i]] !== 'undefined'){
+if(global.db.data.users[member[i]].whitelist == false){
+total++
+sider.push(member[i])}
+}else {
+total++
+sider.push(member[i])}}}
+const delay = time => new Promise(res=>setTimeout(res,time));
+switch (command) {
+case "fantasmas": 
+if(total == 0) return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙀𝙎 𝘼𝘾𝙏𝙄𝙑𝙊 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 :D`, m) 
+m.reply(`⚠️ 𝙍𝙀𝙑𝙄𝙎𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊 ⚠️\n\n𝙂𝙍𝙐𝙋𝙊: ${await conn.getName(m.chat)}\n*𝙈𝙄𝙀𝙈𝘽𝙍𝙊𝙎 𝘿𝙀𝙇 𝙂𝙍𝙐𝙋𝙊:* ${sum}\n\n*[ 👻 𝙇𝙄𝙎𝙏𝘼𝙎 𝘿𝙀 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 👻 ]*\n${sider.map(v => '  👉🏻 @' + v.replace(/@.+/, '')).join('\n')}\n\n*𝙉𝙊𝙏𝘼: 𝙀𝙎𝙏𝙊 𝙋𝙐𝙀𝘿𝙀 𝙉𝙊 𝙎𝙀𝙍 ℅100 𝘼𝘾𝙀𝙍𝙏𝘼𝘿𝙊 𝙀𝙇 𝘽𝙊𝙏 𝙄𝙉𝙄𝘾𝙄𝘼 𝙀𝙇 𝘾𝙊𝙉𝙏𝙀𝙊 𝘿𝙀 𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝘼𝙋𝘼𝙍𝙏𝙄𝙍 𝘿𝙀 𝙌𝙐𝙀 𝙎𝙀 𝘼𝘾𝙏𝙄𝙑𝙊 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙉𝙐́𝙈𝙀𝙍𝙊*`, null, { mentions: sider }) 
+  break   
+case "kickfantasmas":  
+        if(total == 0) return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊 𝙀𝙎 𝘼𝘾𝙏𝙄𝙑𝙊 𝙉𝙊 𝙏𝙄𝙀𝙉𝙀 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 :D`, m) 
+       await m.reply(`⚠️ 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊𝙉 𝘿𝙀 𝙄𝙉𝘼𝘾𝙏𝙄𝙑𝙊𝙎 ⚠️\n\n𝙂𝙍𝙐𝙋𝙊: ${await conn.getName(m.chat)}\n𝙋𝘼𝙍𝙏𝙄𝘾𝙄𝙋𝘼𝙍𝙏𝙀: ${sum}\n\n[ 👻 𝙁𝘼𝙉𝙏𝘼𝙎𝙈𝘼𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘿𝙊 👻 ]\n${sider.map(v => '@' + v.replace(/@.+/, '')).join('\n')}\n\n*𝙀𝙇 𝘽𝙊𝙏 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝙇𝘼 𝙇𝙄𝙎𝙏𝘼 𝙈𝙀𝙉𝘾𝙄𝙊𝙉𝘼𝘿𝘼, 𝙀𝙈𝙋𝙀𝙕𝘼𝘿𝙊 𝙀𝙇 20 𝙎𝙀𝙂𝙐𝙉𝘿𝙊, 𝙔 𝘾𝘼𝘿𝘼 10 𝙎𝙀𝙂𝙐𝙉𝘿𝙊𝙎 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝙍𝘼 𝙐𝙉 𝙉𝙐́𝙈𝙀𝙍𝙊*`, null, { mentions: sider }) 
+       await delay(1 * 10000)
+       let chat = global.db.data.chats[m.chat]
+       chat.welcome = false
+       try{
+       
+         let users = m.mentionedJid.filter(u => !areJidsSameUser(u, conn.user.id))
+       let kickedGhost = sider.map(v => v.id).filter(v => v !== conn.user.jid)
+       for (let user of users)
+           if (user.endsWith('@s.whatsapp.net') && !(participants.find(v => areJidsSameUser(v.id, user)) || { admin: true }).admin)
+        {
+        let res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
+        kickedGhost.concat(res)
+       await delay(1 * 10000)
+       }} finally{
+        chat.welcome = true
+       }
+break            
+}}
+handler.command = /^(fantasmas|kickfantasmas)$/i
+handler.group = handler.botAdmin = handler.admin = true
+handler.fail = null
+export default handler
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+
+    //desarrollado por https://github.com/ReyEndymion
+    //participa en desactivacion de despedida https://github.com/BrunoSobrino/
+
