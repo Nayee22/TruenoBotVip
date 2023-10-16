@@ -9,7 +9,7 @@ handler.all = async function (m) {
 ➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
 ➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
 ➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
-*╰═┅ৡৢ͜͡✦═╡ DIEGO-OFC ╞═┅ৡৢ͜͡✦═╯*`,
+*╰═ ╞═✦EyN*`,
       m
     ); //wm, null, [['Menu', '#menu']], m) botones :V
   }
@@ -30,7 +30,7 @@ handler.all = async function (m) {
 ┆ 𝐧𝐨 𝐢𝐧𝐭𝐞𝐫𝐟𝐢𝐞𝐫𝐞 𝐞𝐧 𝐞𝐥 𝐩𝐫𝐨𝐜𝐞𝐬𝐨 
 ┆ 𝐏𝐚𝐫𝐚 𝐯𝐞𝐫 𝐞𝐥 𝐦𝐞𝐧𝐮́ 𝐝𝐞 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐩𝐮𝐞𝐝𝐞𝐬 𝐮𝐬𝐚𝐫 #menu
 ┆ 
-┆ 「 DORRAT-BOT-MD 」
+┆ 「 HACHIKo-BOT-MD 」
 ╰━━━⊰ ${vs} ⊱━━━━დ*`,
       m
     ); //wm, null, [['Menu', '#menu']], m) botones :V
