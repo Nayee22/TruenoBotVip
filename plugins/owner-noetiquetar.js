@@ -1,3 +1,4 @@
+/*
 let handler = async (m, {conn, text}) => {
   let name = await conn.getName(m.sender);
 
