@@ -1,14 +1,14 @@
 let handler = (m) => m;
 handler.all = async function (m) {
-  if (/^reglas|normas|Reglas$/i.test(m.text)) {
+  if (/^@51907183648|@51967647592|Lola$/i.test(m.text)) {
     //sem prefixo
     conn.reply(
       m.chat,
-      `╭┅〘 ⚠️ 𝗢𝗯𝗲𝗱𝗲𝗰𝗲 𝗹𝗮𝘀 𝗿𝗲𝗴𝗹𝗮𝘀 ⚠️ 〙*
-➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐥𝐥𝐚𝐦𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
-➽❌ 𝐏𝐫𝐨𝐡𝐢𝐛𝐢𝐝𝐨 𝐒𝐩𝐚𝐦 𝐚𝐥 𝐁𝐨𝐭
-➽❌ 𝐍𝐨 𝐚𝐠𝐫𝐞𝐠𝐚𝐫 𝐚𝐥 𝐁𝐨𝐭
-➽❌ 𝐑𝐞𝐬𝐩𝐞𝐭𝐚 𝐥𝐨𝐬 𝐭𝐞𝐫𝐦𝐢𝐧𝐨𝐬 𝐲 𝐜𝐨𝐧𝐝𝐢𝐜𝐢𝐨𝐧𝐞𝐬
+      `╭┅〘 ⚠️ no etiquetes a mis creadores ⚠️ 〙*
+➽ Si deseas un bot 
+➽ Hablar a los siguientes números
+➽ 
+➽ Recuerda que nd es gratis <3
 *╰═ ╞═✦EyN*`,
       m
     ); //wm, null, [['Menu', '#menu']], m) botones :V
