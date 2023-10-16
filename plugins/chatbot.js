@@ -4,10 +4,10 @@ handler.all = async function (m) {
     //sem prefixo
     conn.reply(
       m.chat,
-      `╭┅〘 ⚠️ no etiquetes a mis creadores ⚠️ 〙*
+      `╭┅〘 *_no etiquetes a mis creadores 🚫_* 〙*
 ➽ Si deseas un bot 
 ➽ Hablar a los siguientes números
-➽ 
+➽ wa.me/51907183648 / wa.me/51967647592
 ➽ Recuerda que nd es gratis <3
 *╰═ ╞═✦EyN*`,
       m
