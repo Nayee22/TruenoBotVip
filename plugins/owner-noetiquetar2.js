@@ -1,4 +1,4 @@
-let handler = async (m, {conn, text}) => {
+/* let handler = async (m, {conn, text}) => {
   let name = await conn.getName(m.sender);
 
   conn.sendButton(
